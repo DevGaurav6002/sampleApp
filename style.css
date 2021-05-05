@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(auto, auto);
+  grid-gap: 35px;
+  justify-items: space-between;
+}
+
+.container h2 {
+  font-family: sans-serif;
+  padding: 10px;
+  letter-spacing: 3px;
+}
+
+.container p {
+  font-size: 1.3em;
+  line-height: 25px;
+}
+
+.box {
+  padding: 20px;
+}
+
+.box-html {
+  grid-column: 2 / 3;
+  box-shadow: 10px 0px 10px 0px tomato;
+}
+.box-html h2 {
+  border-bottom: 2px solid tomato;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.box-css h2 {
+  border-bottom: 2px solid skyblue;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.box-js h2 {
+  border-bottom: 2px solid yellow;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.box-bootstrap h2 {
+  border-bottom: 2px solid rgb(199, 27, 199);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.box-css {
+  grid-column: 3 / 4;
+  box-shadow: 10px 0px 10px 0px skyblue;
+}
+
+.box-bootstrap {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  box-shadow: 10px 0px 10px 0px rgb(185, 10, 185);
+}
+
+.box-js {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  box-shadow: 10px 0px 10px 0px yellow;
+}
+
+/*  Hover Effects */
